@@ -12,8 +12,8 @@ const CONFIG = {
 
   // "url" = chemin sur ton Hostinger ("/mon-projet/") ou URL complète.
   projects: [
-    { id: "Myxo", name: "Myxo", url: "/Myxo/", desc: "Myxo est une application web spécialisée dans la création et l'exploration de cocktails.", stack: "React, Nest, Prisma, PostgreSQL" },
-    { id: "Portfolio", name: "Portfolio", url: "/Portfolio/", desc: "Mon portfolio personnel.", stack: "HTML, CSS, JavaScript" },
+    { id: "Myxo", name: "Myxo", url: "/myxo/", desc: "Myxo est une application web spécialisée dans la création et l'exploration de cocktails.", stack: "React, Nest, Prisma, PostgreSQL" },
+    { id: "Portfolio", name: "Portfolio", url: "/portfolio/", desc: "Mon portfolio personnel.", stack: "HTML, CSS, JavaScript" },
     // { id: "projet-3", name: "Projet 3", url: "/projet-3/", desc: "Une phrase qui dit ce que fait le projet.", stack: "Node.js" },
     // { id: "projet-4", name: "Projet 4", url: "/projet-4/", desc: "Une phrase qui dit ce que fait le projet.", stack: "Python" }
   ],
