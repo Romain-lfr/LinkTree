@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>~/ ton-site.fr</title>
-<meta name="description" content="Mes projets, accessibles depuis un terminal.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>~/ romain-lfr.com</title>
+        <meta name="description" content="Mes projets, accessibles depuis un terminal.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main id="term" aria-label="Terminal">
+        <div class="screen">
+            <div id="out" role="log" aria-live="polite"></div>
+            <form id="line" hidden autocomplete="off">
+            <label for="cmd" class="prompt" id="promptLabel"></label>
+            <input id="cmd" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="send" aria-label="Tape une commande">
+            </form>
+        </div>
+        </main>
 
-<main id="term" aria-label="Terminal">
-  <div class="screen">
-    <div id="out" role="log" aria-live="polite"></div>
-    <form id="line" hidden autocomplete="off">
-      <label for="cmd" class="prompt" id="promptLabel"></label>
-      <input id="cmd" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="send" aria-label="Tape une commande">
-    </form>
-  </div>
-</main>
+        <nav class="quick" aria-label="Commandes rapides">
+            <button type="button" data-cmd="ls -l">ls -l</button>
+            <button type="button" data-cmd="whoami">whoami</button>
+            <button type="button" data-cmd="contact">contact</button>
+            <button type="button" data-cmd="help">help</button>
+            <button type="button" data-cmd="clear">clear</button>
+        </nav>
 
-<nav class="quick" aria-label="Commandes rapides">
-  <button type="button" data-cmd="ls -l">ls -l</button>
-  <button type="button" data-cmd="whoami">whoami</button>
-  <button type="button" data-cmd="contact">contact</button>
-  <button type="button" data-cmd="help">help</button>
-  <button type="button" data-cmd="clear">clear</button>
-</nav>
+        <footer class="status" aria-hidden="true">
+            <span id="statusLeft"></span>
+            <span><span class="opt" id="statusTheme"></span> <span id="clock"></span></span>
+        </footer>
 
-<footer class="status" aria-hidden="true">
-  <span id="statusLeft"></span>
-  <span><span class="opt" id="statusTheme"></span> <span id="clock"></span></span>
-</footer>
-
-<script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
